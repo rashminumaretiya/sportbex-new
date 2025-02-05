@@ -7,6 +7,9 @@
   .container {
     max-width: 1440px;
   }
+  .inner-hero-section .hero-image {
+    right: 0;
+  }
   .hero-section .lg-heading {
     font-size: 64px;
     line-height: 74px;
@@ -366,9 +369,6 @@
   }
 }
 @media screen and (max-width: 991px) {
-  footer .text-start.text-sm-end.footer-logo.d-block.d-lg-none.ps-sm-0.ps-2.d-mobile {
-    display: none !important;
-  }
   .md-heading {
     font-size: 44px;
   }
@@ -548,24 +548,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  footer .text-start.text-sm-end.footer-logo.d-block.d-lg-none.ps-sm-0.ps-2.d-mobile {
-    display: block !important;
-  }
-  .payment-solution-section .heading-arrow, .payment-solution-section .heading-arrow {
-    margin: auto;
-  }
-  .skill-head img, .betcraft-head img {
-    transform: translateY(0px);
-  }
-  .why-choose-section {
-    padding: 50px 0;
-  }
-  .payment-solution-section .logo-box {
-    padding: 25px 25px;
-  }
-  .payment-solution-section .logo-box .row .col {
-    width: 50%;
-  }
   .md-heading {
     font-size: 38px;
   }
@@ -847,12 +829,6 @@
   }
 }
 @media screen and (max-width: 575px) {
-  header .navbar-toggler {
-    margin-right: 0;
-  }
-  .animation-wrapper .animate-column + .animate-column {
-    margin-left: 10px;
-  }
   .inner-hero-section .hero-image .ball {
     bottom: -20px;
   }
