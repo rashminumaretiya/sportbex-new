@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bet craft</title>
@@ -9,9 +10,10 @@
     <link rel="stylesheet" href="./scss/slick.css" />
     <link rel="stylesheet" href="./scss/style.css" />
     <link rel="stylesheet" href="./scss/responsive.css" />
-  </head>
+</head>
 
-  <body>
+<body>
+    <!-- Header -->
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-light">
@@ -20,26 +22,70 @@
                         <img src="./assets/svg/white-logo.svg" alt="" />
                     </a>
                 </div>
-              </li>
-              <li class="nav-item">
-                <div class="dropdown">
-                  <button
-                    class="dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Solution
-                  </button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <li><a class="dropdown-item" href="#">Solution</a></li>
-                    <li><a class="dropdown-item" href="#">Products</a></li>
-                    <li><a class="dropdown-item" href="#">Services</a></li>
-                  </ul>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="3" rx="1.5" fill="#FFFFFF" />
+                        <rect y="9" width="28" height="3" rx="1.5" fill="#FFFFFF" />
+                        <rect y="18" width="28" height="3" rx="1.5" fill="#FFFFFF" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products & Services
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Products</a></li>
+                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Solution
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Solution</a></li>
+                                    <li><a class="dropdown-item" href="#">Products</a></li>
+                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How We Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Company
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Company</a></li>
+                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Partner
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Partner</a></li>
+                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="contact-side d-none d-sm-flex">
                     <div class="select-outlined-wrapper position-relative me-2">
@@ -123,13 +169,206 @@
                 <button class="btn btn-primary w-nowrap">Contact Us</button>
             </div>
         </div>
-      </div>
-      <div id="header-overlay" class="header-overlay animated fadeIn"></div>
+        <div id="header-overlay" class="header-overlay animated fadeIn"></div>
     </header>
 
+    <!-- Banner Section -->
     <div class="banner-section">
-        <div class="container">
+        <img src="./assets/png/banner-shape1.png" alt="" class="shape1">
+        <img src="./assets/png/banner-shape2.png" alt="" class="shape2">
+        <img src="./assets/png/banner-shape3.png" alt="" class="shape3">
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12 text-center">
+                    <h1 class="lg-heading">Sports Betting API Integration for Real-Time <span>Odds & Live Updates</span>
+                    </h1>
+                    <p>Power your platform with real-time, accurate data by integrating sports scores APIs, betting odds
+                        APIs, and casino software for a seamless gaming experience.</p>
+                    <button class="btn btn-primary w-nowrap mt-3 mt-lg-4">Discover More <img
+                            src="./assets/svg/right-long.svg" alt=""></button>
+                    <div class="img-wrapper">
+                        <img src="./assets/svg/banner.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- API Solution -->
+    <div class="api-solution-main pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="heading text-center">
+                        <h6>Our API Solutions</h6>
+                        <h2>Frequently <span>Asked Questions</span></h2>
+                    </div>
+                    <div class="arrows">
+                        <img src="./assets/svg/api-solution-arrows.svg" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box">
+                                <div class="round-img-wrapper">
+                                    <img src="./assets/svg/sport-api.svg" alt="">
+                                </div>
+                                <h5>Sports Data API</h5>
+                                <div class="single-list">
+                                    <img src="./assets/svg/gredient-check.svg" alt="">
+                                    <p>Get real-time <span>sports scores API</span>, team stats, and player insights.
+                                    </p>
+                                </div>
+                                <div class="single-list">
+                                    <img src="./assets/svg/gredient-check.svg" alt="">
+                                    <p>Covers <span>cricket, soccer, tennis, basketball</span> and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box">
+                                <div class="round-img-wrapper">
+                                    <img src="./assets/svg/casino-api.svg" alt="">
+                                </div>
+                                <h5>Casino API Solutions</h5>
+                                <div class="single-list">
+                                    <img src="./assets/svg/gredient-check.svg" alt="">
+                                    <p>Integrate <span>live casino</span> and <span>games APIs</span> for seamless
+                                        gaming</p>
+                                </div>
+                                <div class="single-list">
+                                    <img src="./assets/svg/gredient-check.svg" alt="">
+                                    <p> Supports slots, poker, roulette, and live dealer games.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box">
+                                <div class="round-img-wrapper">
+                                    <img src="./assets/svg/odds-api.svg" alt="">
+                                </div>
+                                <h5>Betting & Odds API</h5>
+                                <div class="single-list">
+                                    <img src="./assets/svg/gredient-check.svg" alt="">
+                                    <p>Access sports, betting, and live odds APIs for accurate predictions</p>
+                                </div>
+                                <div class="single-list">
+                                    <img src="./assets/svg/gredient-check.svg" alt="">
+                                    <p>Covers <span>pre-match & live odds</span> from top bookmakers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Betting Casino Section -->
+    <div class="betting-casino-main pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="">
+                    <div class="heading text-center">
+                        <h6>Our API Solutions</h6>
+                        <h2>Your Partner for <span>Betting & Casino</span> Development</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <p class="text-center text">Build high-performance betting and gaming platforms with our expert
+                        casino game development and
+                        sports betting software development services. Secure, scalable, and feature-rich solutions to
+                        elevate your business.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-box">
+                        <div class="img-wrapper">
+                            <img src="./assets/svg/betting-1.svg" alt="">
+                        </div>
+                        <h5>Custom Sportsbook & Betting Platform Development</h5>
+                        <div class="btn">Read more <img src="./assets/svg/right-long-red.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-box">
+                        <div class="img-wrapper">
+                            <img src="./assets/svg/betting-2.svg" alt="">
+                        </div>
+                        <h5>Casino & iGaming Software Solutions</h5>
+                        <div class="btn">Read more <img src="./assets/svg/right-long-red.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-box">
+                        <div class="img-wrapper">
+                            <img src="./assets/svg/betting-3.svg" alt="">
+                        </div>
+                        <h5>Real-Time Data & API Integration</h5>
+                        <div class="btn">Read more <img src="./assets/svg/right-long-red.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-box">
+                        <div class="img-wrapper">
+                            <img src="./assets/svg/betting-4.svg" alt="">
+                        </div>
+                        <h5>Secure Payment Gateway & User Management</h5>
+                        <div class="btn">Read more <img src="./assets/svg/right-long-red.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sport Betting API section -->
+    <div class="sport-betting-api-main pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="heading text-center">
+                        <h6>Our API Solutions</h6>
+                        <h2>Get instant access to your <span>API for sports betting</span></h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box">
+                                <div class="round-img-wrapper">
+                                    <img src="./assets/svg/contact-us.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6>Contact us</h6>
+                                    <p>Get instant access to your <span>API for sports betting.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box">
+                                <div class="round-img-wrapper">
+                                    <img src="./assets/svg/integrate.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6>Integrate</h6>
+                                    <p>Use our easy-to-follow sports <span>API integration guides.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="single-box">
+                                <div class="round-img-wrapper">
+                                    <img src="./assets/svg/launchSale.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6>Launch & Scale</h6>
+                                    <p>Power your <span>sportsbook API</span> or gaming platform</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -143,12 +382,17 @@
                                 <div class="heading">
                                     <h2>Looking for a Cost-Effective Sports <span>Scores & Betting Odds API?</span></h2>
                                 </div>
-                                <p>Take your platform to the next level with our cost-effective API solutions. Get started in just a few hours with seamless API integration and real-time sports data.</p>
-                                <a href="#" class="btn btn-primary">Contact us <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10 7L13 4L10 1" stroke="white" stroke-width="1.875" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 4H12.918" stroke="white" stroke-width="1.875" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <p>Take your platform to the next level with our cost-effective API solutions. Get
+                                    started in just a few hours with seamless API integration and real-time sports data.
+                                </p>
+                                <a href="#" class="btn btn-primary">Contact us <svg width="14" height="8"
+                                        viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 7L13 4L10 1" stroke="white" stroke-width="1.875"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 4H12.918" stroke="white" stroke-width="1.875" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                    </a>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -167,233 +411,177 @@
                     </div>
                     <div class="accordion" id="generalAccordion">
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button
-                              class="accordion-button"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#general-one"
-                              aria-expanded="true"
-                            >
-                                <span>1.</span>
-                                What information does the cricket API provide?
-                            </button>
-                          </h2>
-                          <div
-                            id="general-one"
-                            class="accordion-collapse collapse show"
-                            data-bs-parent="#generalAccordion"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
-                                ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
-                                Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
-                                ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
-                                congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
-                                consequat aliquam. Id placerat dui habitasse quisque nisl
-                                tincidunt facilisi mi id. Dictum elit velit.
-                              </p>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-one" aria-expanded="true">
+                                    <span>1.</span>
+                                    What information does the cricket API provide?
+                                </button>
+                            </h2>
+                            <div id="general-one" class="accordion-collapse collapse show"
+                                data-bs-parent="#generalAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
+                                        ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
+                                        Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
+                                        ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
+                                        congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
+                                        consequat aliquam. Id placerat dui habitasse quisque nisl
+                                        tincidunt facilisi mi id. Dictum elit velit.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button
-                              class="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#general-two"
-                              aria-expanded="false"
-                            >
-                              <div>
-                                <span>2.</span>
-                                How can I receive data from the cricket API?
-                              </div>
-                            </button>
-                          </h2>
-                          <div
-                            id="general-two"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#generalAccordion"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
-                                ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
-                                Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
-                                ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
-                                congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
-                                consequat aliquam. Id placerat dui habitasse quisque nisl
-                                tincidunt facilisi mi id. Dictum elit velit.
-                              </p>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-two" aria-expanded="false">
+                                    <div>
+                                        <span>2.</span>
+                                        How can I receive data from the cricket API?
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="general-two" class="accordion-collapse collapse"
+                                data-bs-parent="#generalAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
+                                        ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
+                                        Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
+                                        ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
+                                        congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
+                                        consequat aliquam. Id placerat dui habitasse quisque nisl
+                                        tincidunt facilisi mi id. Dictum elit velit.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button
-                              class="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#general-three"
-                              aria-expanded="false"
-                            >
-                              <div>
-                                <span>3.</span>
-                                How quickly does the cricket API get updated?
-                              </div>
-                            </button>
-                          </h2>
-                          <div
-                            id="general-three"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#generalAccordion"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
-                                ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
-                                Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
-                                ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
-                                congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
-                                consequat aliquam. Id placerat dui habitasse quisque nisl
-                                tincidunt facilisi mi id. Dictum elit velit.
-                              </p>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-three" aria-expanded="false">
+                                    <div>
+                                        <span>3.</span>
+                                        How quickly does the cricket API get updated?
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="general-three" class="accordion-collapse collapse"
+                                data-bs-parent="#generalAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
+                                        ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
+                                        Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
+                                        ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
+                                        congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
+                                        consequat aliquam. Id placerat dui habitasse quisque nisl
+                                        tincidunt facilisi mi id. Dictum elit velit.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button
-                              class="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#general-four"
-                              aria-expanded="false"
-                            >
-                              <div>
-                                <span>4.</span>
-                                What does the cricket API cost?
-                              </div>
-                            </button>
-                          </h2>
-                          <div
-                            id="general-four"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#generalAccordion"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
-                                ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
-                                Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
-                                ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
-                                congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
-                                consequat aliquam. Id placerat dui habitasse quisque nisl
-                                tincidunt facilisi mi id. Dictum elit velit.
-                              </p>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-four" aria-expanded="false">
+                                    <div>
+                                        <span>4.</span>
+                                        What does the cricket API cost?
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="general-four" class="accordion-collapse collapse"
+                                data-bs-parent="#generalAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
+                                        ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
+                                        Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
+                                        ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
+                                        congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
+                                        consequat aliquam. Id placerat dui habitasse quisque nisl
+                                        tincidunt facilisi mi id. Dictum elit velit.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button
-                              class="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#general-five"
-                              aria-expanded="false"
-                            >
-                              <div>
-                                <span>5.</span>
-                                What integration options are available for the cricket API?
-                              </div>
-                            </button>
-                          </h2>
-                          <div
-                            id="general-five"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#generalAccordion"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
-                                ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
-                                Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
-                                ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
-                                congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
-                                consequat aliquam. Id placerat dui habitasse quisque nisl
-                                tincidunt facilisi mi id. Dictum elit velit.
-                              </p>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-five" aria-expanded="false">
+                                    <div>
+                                        <span>5.</span>
+                                        What integration options are available for the cricket API?
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="general-five" class="accordion-collapse collapse"
+                                data-bs-parent="#generalAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
+                                        ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
+                                        Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
+                                        ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
+                                        congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
+                                        consequat aliquam. Id placerat dui habitasse quisque nisl
+                                        tincidunt facilisi mi id. Dictum elit velit.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button
-                              class="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#general-six"
-                              aria-expanded="false"
-                            >
-                              <div>
-                                <span>6.</span>
-                                Is the cricket score API reliable?
-                              </div>
-                            </button>
-                          </h2>
-                          <div
-                            id="general-six"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#generalAccordion"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
-                                ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
-                                Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
-                                ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
-                                congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
-                                consequat aliquam. Id placerat dui habitasse quisque nisl
-                                tincidunt facilisi mi id. Dictum elit velit.
-                              </p>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-six" aria-expanded="false">
+                                    <div>
+                                        <span>6.</span>
+                                        Is the cricket score API reliable?
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="general-six" class="accordion-collapse collapse"
+                                data-bs-parent="#generalAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
+                                        ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
+                                        Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
+                                        ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
+                                        congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
+                                        consequat aliquam. Id placerat dui habitasse quisque nisl
+                                        tincidunt facilisi mi id. Dictum elit velit.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button
-                              class="accordion-button collapsed"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target="#general-seven"
-                              aria-expanded="false"
-                            >
-                              <div>
-                                <span>7.</span>
-                                What data does the Cricket Score API provide?
-                              </div>
-                            </button>
-                          </h2>
-                          <div
-                            id="general-seven"
-                            class="accordion-collapse collapse"
-                            data-bs-parent="#generalAccordion"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
-                                ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
-                                Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
-                                ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
-                                congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
-                                consequat aliquam. Id placerat dui habitasse quisque nisl
-                                tincidunt facilisi mi id. Dictum elit velit.
-                              </p>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#general-seven" aria-expanded="false">
+                                    <div>
+                                        <span>7.</span>
+                                        What data does the Cricket Score API provide?
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="general-seven" class="accordion-collapse collapse"
+                                data-bs-parent="#generalAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus
+                                        ultrices. Ac pharetra ultrices consectetur consequat tellus massa.
+                                        Nec aliquam cras sagittis duis sed euismod arcu hac. Ornare amet
+                                        ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet
+                                        congue adipiscing. Faucibus magna nisl ullamcorper in facilisis
+                                        consequat aliquam. Id placerat dui habitasse quisque nisl
+                                        tincidunt facilisi mi id. Dictum elit velit.
+                                    </p>
+                                </div>
                             </div>
-                          </div>
                         </div>
                     </div>
                 </div>
@@ -402,199 +590,156 @@
     </div>
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="footer-widget">
-              <h3>Products and services</h3>
-              <ul>
-                <li><a href="#">Online Casino Platform</a></li>
-                <li><a href="#">Sportsbook Software</a></li>
-                <li><a href="#">Managed Services</a></li>
-                <li><a href="#">Casino Game Aggregator</a></li>
-                <li><a href="#">Affilka</a></li>
-                <li><a href="#">Jackpot Aggregator</a></li>
-                <li><a href="#">Lotto Software</a></li>
-                <li><a href="#">Video Lottery Terminal</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="footer-widget">
-              <h3>Solutions</h3>
-              <ul>
-                <li><a href="#">Turnkey Casino Solution</a></li>
-                <li><a href="#">White Label Casino Solution</a></li>
-                <li><a href="#">Crypto Casino Solution</a></li>
-                <li><a href="#">Online Casino Games</a></li>
-                <li><a href="#">White Label Sportsbook Solution</a></li>
-                <li><a href="#">Sportsbook Integration</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="footer-widget">
-              <h3>Resources</h3>
-              <ul>
-                <li><a href="#">Knowledge Base</a></li>
-                <li><a href="#">Licences</a></li>
-                <li><a href="#">How to Start Online Casino</a></li>
-                <li><a href="#">iGaming Software</a></li>
-                <li><a href="#">Brandbook</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Events</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12">
-            <div class="footer-widget">
-              <h3>Company</h3>
-              <ul>
-                <li><a href="#">About SOFTSWISS</a></li>
-                <li><a href="#">Social Responsibility</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Legal Disclaimer</a></li>
-                <li><a href="#">Rubens Barrichello</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="bottom-footer">
-          <div class="row align-items-center">
-            <div class="col-sm-6 col-12 mb-3 mb-sm-0">
-              <div
-                class="footer-social d-flex align-items-center justify-content-sm-start justify-content-center"
-              >
-                <h6>Social:</h6>
-                <div class="d-flex">
-                  <a href="#">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.6049 6.94437C5.81065 6.95102 5.01624 6.94957 4.22194 6.94515C3.9975 6.94382 3.88631 7.0213 3.88672 7.27673C3.89169 10.125 3.88976 12.9733 3.89035 15.8215C3.89041 15.93 3.87379 16.0491 4.00733 16.0985C4.01242 16.1159 6.81254 16.1148 6.82009 16.0976C6.96749 16.0401 6.93777 15.9065 6.93783 15.791C6.93912 12.9628 6.93684 10.1346 6.94228 7.30639C6.94269 7.04975 6.85484 6.94225 6.6049 6.94437Z"
-                        fill="currentColor"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M5.41447 3.125C4.57076 3.125 3.88672 3.80903 3.88672 4.65275C3.88672 5.49658 4.57076 6.18056 5.41447 6.18056C6.25824 6.18056 6.94228 5.49658 6.94228 4.65275C6.94228 3.80903 6.25824 3.125 5.41447 3.125Z"
-                        fill="currentColor"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M16.8331 15.672C16.8349 14.212 16.8423 12.752 16.8305 11.2921C16.8252 10.6527 16.8023 10.0116 16.6679 9.38222C16.4476 8.35039 15.9519 7.54479 14.9671 7.16914C14.3101 6.91854 13.6232 6.90241 12.9371 6.99956C12.3608 7.08116 11.8299 7.30068 11.3462 7.70872C11.3462 7.56026 11.3457 7.46181 11.3464 7.36348C11.3478 7.14265 11.2451 7.04283 11.0334 7.04384C10.281 7.04735 9.52856 7.04646 8.77614 7.04443C8.56906 7.04384 8.46964 7.12937 8.46997 7.36217C8.47389 10.1636 8.47247 12.9651 8.47256 15.7666C8.47256 15.8741 8.45839 15.9884 8.58272 16.0413C8.59589 16.0586 11.3122 16.0651 11.3121 16.0474C11.4903 15.9674 11.4355 15.7985 11.4358 15.661C11.4383 14.2792 11.43 12.8975 11.4374 11.5157C11.4397 11.0836 11.4556 10.6471 11.6423 10.2449C11.8634 9.76814 12.3211 9.56156 12.9657 9.64614C13.4092 9.70422 13.6923 10.0045 13.7804 10.5276C13.8131 10.7209 13.8375 10.9186 13.8386 11.1143C13.8472 12.6342 13.8484 14.1541 13.8547 15.674C13.8553 15.8143 13.8132 15.9801 13.994 16.0506C13.9878 16.0705 16.7229 16.0584 16.7236 16.0391C16.8708 15.9533 16.8329 15.8036 16.8331 15.672Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_357_4213)">
-                        <path
-                          d="M17.5042 9.93717C17.5039 13.7679 14.6393 16.9934 10.8354 17.4462V12.3282H12.1798C12.3683 12.3292 12.5269 12.1871 12.5465 11.9997L12.6917 10.892C12.7018 10.7868 12.6687 10.6821 12.6 10.6018C12.5298 10.5187 12.4262 10.4711 12.3173 10.4719H10.8354V9.17325C10.8354 8.75142 11.1774 8.40942 11.5993 8.40942H12.3632C12.4618 8.41142 12.557 8.37375 12.6274 8.30473C12.6978 8.23573 12.7375 8.1413 12.7375 8.04271V6.81285C12.7351 6.6215 12.5914 6.46149 12.4014 6.43854C12.4014 6.43854 11.8514 6.39272 11.1944 6.39272C9.55975 6.39272 8.65834 7.36285 8.65834 9.12742V10.4719H7.13057C6.92384 10.4719 6.75626 10.6395 6.75626 10.8462V11.9538C6.75626 12.1606 6.92384 12.3282 7.13057 12.3282H8.6125V17.3851C4.66433 16.6851 1.94683 13.0279 2.41587 9.04567C2.88491 5.06343 6.37777 2.13772 10.3806 2.37422C14.3833 2.61073 17.5073 5.9274 17.5042 9.93717Z"
-                          fill="currentColor"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_357_4213">
-                          <rect width="20" height="20" fill="currentColor" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_357_4218)">
-                        <path
-                          d="M17.1866 6.37679C17.0141 5.72722 16.5057 5.21564 15.8604 5.04203C14.6907 4.72656 10 4.72656 10 4.72656C10 4.72656 5.30939 4.72656 4.1396 5.04203C3.49423 5.21567 2.98595 5.72722 2.81344 6.37679C2.5 7.55416 2.5 10.0107 2.5 10.0107C2.5 10.0107 2.5 12.4672 2.81344 13.6445C2.98595 14.2941 3.49423 14.7843 4.1396 14.9579C5.30939 15.2734 10 15.2734 10 15.2734C10 15.2734 14.6906 15.2734 15.8604 14.9579C16.5057 14.7843 17.0141 14.2941 17.1866 13.6445C17.5 12.4672 17.5 10.0107 17.5 10.0107C17.5 10.0107 17.5 7.55416 17.1866 6.37679ZM8.46592 12.2409V7.78035L12.3863 10.0107L8.46592 12.2409Z"
-                          fill="currentColor"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_357_4218">
-                          <rect width="20" height="20" fill="currentColor" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.99913 2.2564C12.5226 2.2564 12.8214 2.26748 13.8138 2.31174C14.7361 2.35232 15.2341 2.50728 15.5662 2.6364C16.0052 2.8061 16.3225 3.0127 16.6508 3.34104C16.9829 3.67306 17.1858 3.98665 17.3555 4.42568C17.4846 4.75771 17.6396 5.25944 17.6801 6.17806C17.7244 7.17415 17.7355 7.47299 17.7355 9.99273C17.7355 12.5162 17.7244 12.815 17.6801 13.8074C17.6396 14.7297 17.4846 15.2278 17.3555 15.5598C17.1858 15.9988 16.9791 16.3161 16.6508 16.6444C16.3188 16.9764 16.0052 17.1793 15.5662 17.3491C15.2341 17.4782 14.7325 17.6331 13.8138 17.6738C12.8177 17.718 12.5189 17.7291 9.99913 17.7291C7.4757 17.7291 7.17687 17.718 6.18446 17.6738C5.26215 17.6331 4.76411 17.4782 4.43208 17.3491C3.99305 17.1793 3.67578 16.9728 3.34744 16.6444C3.01541 16.3124 2.8125 15.9988 2.6428 15.5598C2.51368 15.2278 2.35872 14.726 2.31814 13.8074C2.27388 12.8113 2.2628 12.5124 2.2628 9.99273C2.2628 7.4693 2.27388 7.17046 2.31814 6.17806C2.35872 5.25575 2.51368 4.75771 2.6428 4.42568C2.8125 3.98665 3.0191 3.66938 3.34744 3.34104C3.67947 3.00901 3.99305 2.8061 4.43208 2.6364C4.76411 2.50728 5.26584 2.35232 6.18446 2.31174C7.17687 2.26748 7.4757 2.2564 9.99913 2.2564ZM9.99913 0.555664C7.43511 0.555664 7.11415 0.566732 6.10699 0.611003C5.10352 0.655273 4.41363 0.8176 3.81598 1.05002C3.19249 1.29351 2.66493 1.61448 2.14105 2.14203C1.6135 2.66591 1.29253 3.19346 1.04905 3.81326C0.816623 4.41461 0.654296 5.10081 0.610026 6.10428C0.565755 7.11513 0.554688 7.43609 0.554688 10.0001C0.554688 12.5641 0.565755 12.8851 0.610026 13.8922C0.654296 14.8958 0.816623 15.5857 1.04905 16.1832C1.29253 16.8068 1.6135 17.3343 2.14105 17.8582C2.66493 18.3821 3.19249 18.7067 3.81229 18.9466C4.41363 19.1789 5.09982 19.3412 6.1033 19.3856C7.11047 19.4298 7.43142 19.4409 9.99544 19.4409C12.5595 19.4409 12.8805 19.4298 13.8876 19.3856C14.891 19.3412 15.5809 19.1789 16.1786 18.9466C16.7984 18.7067 17.3259 18.3821 17.8498 17.8582C18.3737 17.3343 18.6984 16.8068 18.9381 16.187C19.1706 15.5857 19.3329 14.8994 19.3771 13.896C19.4215 12.8888 19.4325 12.5678 19.4325 10.0038C19.4325 7.43977 19.4215 7.11882 19.3771 6.11165C19.3329 5.10819 19.1706 4.4183 18.9381 3.82064C18.7057 3.19346 18.3848 2.66591 17.8572 2.14203C17.3334 1.61816 16.8058 1.29351 16.186 1.05371C15.5847 0.82129 14.8985 0.658963 13.895 0.614692C12.8841 0.566732 12.5631 0.555664 9.99913 0.555664Z"
-                        fill="currentColor"
-                      />
-                      <path
-                        d="M9.99978 5.14746C7.3214 5.14746 5.14844 7.32043 5.14844 9.9988C5.14844 12.6772 7.3214 14.8501 9.99978 14.8501C12.6782 14.8501 14.8511 12.6772 14.8511 9.9988C14.8511 7.32043 12.6782 5.14746 9.99978 5.14746ZM9.99978 13.1458C8.26216 13.1458 6.85287 11.7364 6.85287 9.9988C6.85287 8.26118 8.26216 6.85189 9.99978 6.85189C11.7374 6.85189 13.1468 8.26118 13.1468 9.9988C13.1468 11.7364 11.7374 13.1458 9.99978 13.1458Z"
-                        fill="currentColor"
-                      />
-                      <path
-                        d="M16.1754 4.95632C16.1754 5.5835 15.6663 6.08892 15.0428 6.08892C14.4156 6.08892 13.9102 5.57981 13.9102 4.95632C13.9102 4.32915 14.4193 3.82373 15.0428 3.82373C15.6663 3.82373 16.1754 4.33284 16.1754 4.95632Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_357_4242)">
-                        <path
-                          d="M3.74506 4.06006L8.60066 10.6131L3.71436 15.9387H4.81407L9.09216 11.2752L12.5497 15.9389H16.2912L11.1621 9.0185L15.7103 4.06006H14.6107L10.6708 8.35425L7.48726 4.06006H3.74506ZM5.36239 4.87767H7.08163L14.6732 15.1212H12.9544L5.36239 4.87767Z"
-                          fill="currentColor"
-                          stroke="currentColor"
-                          stroke-width="0.416667"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_357_4242">
-                          <rect width="20" height="20" fill="currentColor" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="footer-widget">
+                        <h3>Products and services</h3>
+                        <ul>
+                            <li><a href="#">Online Casino Platform</a></li>
+                            <li><a href="#">Sportsbook Software</a></li>
+                            <li><a href="#">Managed Services</a></li>
+                            <li><a href="#">Casino Game Aggregator</a></li>
+                            <li><a href="#">Affilka</a></li>
+                            <li><a href="#">Jackpot Aggregator</a></li>
+                            <li><a href="#">Lotto Software</a></li>
+                            <li><a href="#">Video Lottery Terminal</a></li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="footer-widget">
+                        <h3>Solutions</h3>
+                        <ul>
+                            <li><a href="#">Turnkey Casino Solution</a></li>
+                            <li><a href="#">White Label Casino Solution</a></li>
+                            <li><a href="#">Crypto Casino Solution</a></li>
+                            <li><a href="#">Online Casino Games</a></li>
+                            <li><a href="#">White Label Sportsbook Solution</a></li>
+                            <li><a href="#">Sportsbook Integration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="footer-widget">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Knowledge Base</a></li>
+                            <li><a href="#">Licences</a></li>
+                            <li><a href="#">How to Start Online Casino</a></li>
+                            <li><a href="#">iGaming Software</a></li>
+                            <li><a href="#">Brandbook</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="footer-widget">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About SOFTSWISS</a></li>
+                            <li><a href="#">Social Responsibility</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Legal Disclaimer</a></li>
+                            <li><a href="#">Rubens Barrichello</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 col-12">
-              <p class="mb-0 text-sm-end text-center fw-normal copy-right">
-                © 2024-2025 Betcraft. All Rights Reserved.
-              </p>
+            <div class="bottom-footer">
+                <div class="row align-items-center">
+                    <div class="col-sm-6 col-12 mb-3 mb-sm-0">
+                        <div
+                            class="footer-social d-flex align-items-center justify-content-sm-start justify-content-center">
+                            <h6>Social:</h6>
+                            <div class="d-flex">
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.6049 6.94437C5.81065 6.95102 5.01624 6.94957 4.22194 6.94515C3.9975 6.94382 3.88631 7.0213 3.88672 7.27673C3.89169 10.125 3.88976 12.9733 3.89035 15.8215C3.89041 15.93 3.87379 16.0491 4.00733 16.0985C4.01242 16.1159 6.81254 16.1148 6.82009 16.0976C6.96749 16.0401 6.93777 15.9065 6.93783 15.791C6.93912 12.9628 6.93684 10.1346 6.94228 7.30639C6.94269 7.04975 6.85484 6.94225 6.6049 6.94437Z"
+                                            fill="currentColor" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.41447 3.125C4.57076 3.125 3.88672 3.80903 3.88672 4.65275C3.88672 5.49658 4.57076 6.18056 5.41447 6.18056C6.25824 6.18056 6.94228 5.49658 6.94228 4.65275C6.94228 3.80903 6.25824 3.125 5.41447 3.125Z"
+                                            fill="currentColor" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16.8331 15.672C16.8349 14.212 16.8423 12.752 16.8305 11.2921C16.8252 10.6527 16.8023 10.0116 16.6679 9.38222C16.4476 8.35039 15.9519 7.54479 14.9671 7.16914C14.3101 6.91854 13.6232 6.90241 12.9371 6.99956C12.3608 7.08116 11.8299 7.30068 11.3462 7.70872C11.3462 7.56026 11.3457 7.46181 11.3464 7.36348C11.3478 7.14265 11.2451 7.04283 11.0334 7.04384C10.281 7.04735 9.52856 7.04646 8.77614 7.04443C8.56906 7.04384 8.46964 7.12937 8.46997 7.36217C8.47389 10.1636 8.47247 12.9651 8.47256 15.7666C8.47256 15.8741 8.45839 15.9884 8.58272 16.0413C8.59589 16.0586 11.3122 16.0651 11.3121 16.0474C11.4903 15.9674 11.4355 15.7985 11.4358 15.661C11.4383 14.2792 11.43 12.8975 11.4374 11.5157C11.4397 11.0836 11.4556 10.6471 11.6423 10.2449C11.8634 9.76814 12.3211 9.56156 12.9657 9.64614C13.4092 9.70422 13.6923 10.0045 13.7804 10.5276C13.8131 10.7209 13.8375 10.9186 13.8386 11.1143C13.8472 12.6342 13.8484 14.1541 13.8547 15.674C13.8553 15.8143 13.8132 15.9801 13.994 16.0506C13.9878 16.0705 16.7229 16.0584 16.7236 16.0391C16.8708 15.9533 16.8329 15.8036 16.8331 15.672Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_357_4213)">
+                                            <path
+                                                d="M17.5042 9.93717C17.5039 13.7679 14.6393 16.9934 10.8354 17.4462V12.3282H12.1798C12.3683 12.3292 12.5269 12.1871 12.5465 11.9997L12.6917 10.892C12.7018 10.7868 12.6687 10.6821 12.6 10.6018C12.5298 10.5187 12.4262 10.4711 12.3173 10.4719H10.8354V9.17325C10.8354 8.75142 11.1774 8.40942 11.5993 8.40942H12.3632C12.4618 8.41142 12.557 8.37375 12.6274 8.30473C12.6978 8.23573 12.7375 8.1413 12.7375 8.04271V6.81285C12.7351 6.6215 12.5914 6.46149 12.4014 6.43854C12.4014 6.43854 11.8514 6.39272 11.1944 6.39272C9.55975 6.39272 8.65834 7.36285 8.65834 9.12742V10.4719H7.13057C6.92384 10.4719 6.75626 10.6395 6.75626 10.8462V11.9538C6.75626 12.1606 6.92384 12.3282 7.13057 12.3282H8.6125V17.3851C4.66433 16.6851 1.94683 13.0279 2.41587 9.04567C2.88491 5.06343 6.37777 2.13772 10.3806 2.37422C14.3833 2.61073 17.5073 5.9274 17.5042 9.93717Z"
+                                                fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_357_4213">
+                                                <rect width="20" height="20" fill="currentColor" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_357_4218)">
+                                            <path
+                                                d="M17.1866 6.37679C17.0141 5.72722 16.5057 5.21564 15.8604 5.04203C14.6907 4.72656 10 4.72656 10 4.72656C10 4.72656 5.30939 4.72656 4.1396 5.04203C3.49423 5.21567 2.98595 5.72722 2.81344 6.37679C2.5 7.55416 2.5 10.0107 2.5 10.0107C2.5 10.0107 2.5 12.4672 2.81344 13.6445C2.98595 14.2941 3.49423 14.7843 4.1396 14.9579C5.30939 15.2734 10 15.2734 10 15.2734C10 15.2734 14.6906 15.2734 15.8604 14.9579C16.5057 14.7843 17.0141 14.2941 17.1866 13.6445C17.5 12.4672 17.5 10.0107 17.5 10.0107C17.5 10.0107 17.5 7.55416 17.1866 6.37679ZM8.46592 12.2409V7.78035L12.3863 10.0107L8.46592 12.2409Z"
+                                                fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_357_4218">
+                                                <rect width="20" height="20" fill="currentColor" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99913 2.2564C12.5226 2.2564 12.8214 2.26748 13.8138 2.31174C14.7361 2.35232 15.2341 2.50728 15.5662 2.6364C16.0052 2.8061 16.3225 3.0127 16.6508 3.34104C16.9829 3.67306 17.1858 3.98665 17.3555 4.42568C17.4846 4.75771 17.6396 5.25944 17.6801 6.17806C17.7244 7.17415 17.7355 7.47299 17.7355 9.99273C17.7355 12.5162 17.7244 12.815 17.6801 13.8074C17.6396 14.7297 17.4846 15.2278 17.3555 15.5598C17.1858 15.9988 16.9791 16.3161 16.6508 16.6444C16.3188 16.9764 16.0052 17.1793 15.5662 17.3491C15.2341 17.4782 14.7325 17.6331 13.8138 17.6738C12.8177 17.718 12.5189 17.7291 9.99913 17.7291C7.4757 17.7291 7.17687 17.718 6.18446 17.6738C5.26215 17.6331 4.76411 17.4782 4.43208 17.3491C3.99305 17.1793 3.67578 16.9728 3.34744 16.6444C3.01541 16.3124 2.8125 15.9988 2.6428 15.5598C2.51368 15.2278 2.35872 14.726 2.31814 13.8074C2.27388 12.8113 2.2628 12.5124 2.2628 9.99273C2.2628 7.4693 2.27388 7.17046 2.31814 6.17806C2.35872 5.25575 2.51368 4.75771 2.6428 4.42568C2.8125 3.98665 3.0191 3.66938 3.34744 3.34104C3.67947 3.00901 3.99305 2.8061 4.43208 2.6364C4.76411 2.50728 5.26584 2.35232 6.18446 2.31174C7.17687 2.26748 7.4757 2.2564 9.99913 2.2564ZM9.99913 0.555664C7.43511 0.555664 7.11415 0.566732 6.10699 0.611003C5.10352 0.655273 4.41363 0.8176 3.81598 1.05002C3.19249 1.29351 2.66493 1.61448 2.14105 2.14203C1.6135 2.66591 1.29253 3.19346 1.04905 3.81326C0.816623 4.41461 0.654296 5.10081 0.610026 6.10428C0.565755 7.11513 0.554688 7.43609 0.554688 10.0001C0.554688 12.5641 0.565755 12.8851 0.610026 13.8922C0.654296 14.8958 0.816623 15.5857 1.04905 16.1832C1.29253 16.8068 1.6135 17.3343 2.14105 17.8582C2.66493 18.3821 3.19249 18.7067 3.81229 18.9466C4.41363 19.1789 5.09982 19.3412 6.1033 19.3856C7.11047 19.4298 7.43142 19.4409 9.99544 19.4409C12.5595 19.4409 12.8805 19.4298 13.8876 19.3856C14.891 19.3412 15.5809 19.1789 16.1786 18.9466C16.7984 18.7067 17.3259 18.3821 17.8498 17.8582C18.3737 17.3343 18.6984 16.8068 18.9381 16.187C19.1706 15.5857 19.3329 14.8994 19.3771 13.896C19.4215 12.8888 19.4325 12.5678 19.4325 10.0038C19.4325 7.43977 19.4215 7.11882 19.3771 6.11165C19.3329 5.10819 19.1706 4.4183 18.9381 3.82064C18.7057 3.19346 18.3848 2.66591 17.8572 2.14203C17.3334 1.61816 16.8058 1.29351 16.186 1.05371C15.5847 0.82129 14.8985 0.658963 13.895 0.614692C12.8841 0.566732 12.5631 0.555664 9.99913 0.555664Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M9.99978 5.14746C7.3214 5.14746 5.14844 7.32043 5.14844 9.9988C5.14844 12.6772 7.3214 14.8501 9.99978 14.8501C12.6782 14.8501 14.8511 12.6772 14.8511 9.9988C14.8511 7.32043 12.6782 5.14746 9.99978 5.14746ZM9.99978 13.1458C8.26216 13.1458 6.85287 11.7364 6.85287 9.9988C6.85287 8.26118 8.26216 6.85189 9.99978 6.85189C11.7374 6.85189 13.1468 8.26118 13.1468 9.9988C13.1468 11.7364 11.7374 13.1458 9.99978 13.1458Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M16.1754 4.95632C16.1754 5.5835 15.6663 6.08892 15.0428 6.08892C14.4156 6.08892 13.9102 5.57981 13.9102 4.95632C13.9102 4.32915 14.4193 3.82373 15.0428 3.82373C15.6663 3.82373 16.1754 4.33284 16.1754 4.95632Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_357_4242)">
+                                            <path
+                                                d="M3.74506 4.06006L8.60066 10.6131L3.71436 15.9387H4.81407L9.09216 11.2752L12.5497 15.9389H16.2912L11.1621 9.0185L15.7103 4.06006H14.6107L10.6708 8.35425L7.48726 4.06006H3.74506ZM5.36239 4.87767H7.08163L14.6732 15.1212H12.9544L5.36239 4.87767Z"
+                                                fill="currentColor" stroke="currentColor" stroke-width="0.416667" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_357_4242">
+                                                <rect width="20" height="20" fill="currentColor" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <p class="mb-0 text-sm-end text-center fw-normal copy-right">
+                            © 2024-2025 Betcraft. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </footer>
 
     <script src="./js/jquery-3.6.1.min.js"></script>
@@ -602,5 +747,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
