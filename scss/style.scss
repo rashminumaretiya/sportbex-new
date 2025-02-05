@@ -10,9 +10,12 @@ $primary-100: #e30613;
 $primary-200: #95060f;
 $primary-300: #eb4d13;
 $primary-400: #ed8406;
+$primary-500: #FAD0D0;
 $white: #ffffff;
 $black: #000000;
 $dark: #212121;
+$gray: #F7F7F9;
+$gray-50: #C5C5DC;
 $sf-regular: "sf-regular";
 $sf-medium: "sf-medium";
 $sf-bold: "sf-bold";
@@ -121,54 +124,34 @@ li {
   }
 }
 
-.lg-heading {
-  font-size: 70px;
-  color: #000000;
-  line-height: 88px;
-  font-family: "sf-bold";
-
-  .red-text {
-    color: $primary;
-  }
-}
-
-.md-heading {
-  font-size: 50px;
-  line-height: 1.12;
-  font-weight: bold;
-
-  .red-text {
-    color: $primary;
-  }
-}
-
-.sm-heading {
-  font-size: 26px;
-  line-height: 35px;
-  // color: $dark-gray-100;
-  font-family: "sf-bold";
-}
-
-.yellow-text {
-  font-size: 30px;
-  line-height: 38px;
-  font-family: "Caveat", cursive;
-  color: #f89a20;
-}
-
-.text {
-  font-size: 16px;
-  // color: rgba($dark-gray-100, 0.5);
-  line-height: 21px;
-  font-weight: 500;
-}
-
 .form-control,
 .form-select {
   &:focus {
     outline: none;
     box-shadow: none;
     border-color: inherit;
+  }
+}
+.pt-70 {
+  padding-top: 70px;
+}
+.pb-70 {
+  padding-bottom: 70px;
+}
+.heading {
+  margin-bottom: 20px;
+  h6 {
+    background-color: rgba($primary, 5%);
+    padding: 6px 25px;
+    color: $primary;
+    display: inline-block;
+  }
+  h2 {
+    font-size: 50px;
+    color: $dark;
+    span {
+      color: $primary;
+    }
   }
 }
 
@@ -264,4 +247,130 @@ header {
 .banner-section {
   background: url("../assets/png/banner-bg.png");
   padding: 140px 0 410px;
+}
+
+/* Api Section */
+.api-inner-info {
+  border: 1px solid $primary-500;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+/* FAQs Css */
+.accordion {
+  .accordion-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    .accordion-header {
+      .accordion-button {
+        background-color: $gray;
+        box-shadow: none;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        color: $dark;
+        span {
+          margin-right: 4px;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        &:after {
+          background-image: url('../assets/svg/plus.svg');
+        }
+        &[aria-expanded="true"] {
+          background-color: transparent;
+          &:after {
+            background-image: url('../assets/svg/minus.svg');
+          }
+        }
+      }
+    }
+    .accordion-body {
+      padding: 0 15px 15px;
+      p {
+        color: rgba($dark, 70%);
+        font-size: 14px;
+        line-height: 1.5;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:has(.accordion-button[aria-expanded="true"]) {
+      box-shadow: 9px 29px 30px 0px #9C545417;
+      border-color: $primary;
+    }
+  }
+}
+
+/* Footer Css */
+footer {
+  background-color: $gray;
+  padding: 40px 0;
+  .footer-widget {
+    h3 {
+      color: $dark;
+      font-size: 22px;
+    }
+    ul {
+      li {
+        padding: 7px 0;
+        a {
+          text-decoration: none;
+          color: rgba($dark, 70%);
+          font-size: 16px;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    border-top: 1px solid $gray-50;
+    padding-top: 15px;
+    margin-top: 30px;
+    .footer-social {
+      h6 {
+          margin-right: 15px;
+          margin-bottom: 0;
+          font-size: 22px;
+          color: $dark;
+          font-weight: 400;
+      }
+  
+      a {
+          height: 40px;
+          width: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+          border-radius: 50%;
+          background-color: $white;
+          color: $dark;
+          &:hover {
+            color: $white;
+            background-color: $primary;
+          }
+  
+          @media screen and (max-width: 767px) {
+              height: 30px;
+              width: 30px;
+          }
+  
+          svg {
+              @media screen and (max-width: 767px) {
+                  height: 16px;
+                  width: auto;
+              }
+          }
+      }
+    }
+    .copy-right {
+      color: rgba($dark, 70%);;
+    }
+  }
 }
