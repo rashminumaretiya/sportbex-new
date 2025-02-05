@@ -1,40 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
-  AOS.init();
-});
-
-$(".company-slider").slick({
-  speed: 2000,
-  autoplay: true,
-  autoplaySpeed: 0,
-  centerMode: true,
-  cssEase: "linear",
-  slidesToShow: 7,
-  slidesToScroll: 1,
-  infinite: true,
-  initialSlide: 1,
-  arrows: false,
-  buttons: false,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//   AOS.init();
+// });
 
 $(function () {
   var header = $(".navbar");
@@ -49,58 +15,6 @@ $(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".product-slider").slick({
-    vertical: true,
-    slidesToShow: 2,
-    verticalSwiping: true,
-    arrows: false,
-    infinite: false,
-    dots: false,
-  });
-
-  // Handle mouse scroll event
-  $(".product-slider").on("wheel", function (e) {
-    e.preventDefault();
-
-    if (e.originalEvent.deltaY < 0) {
-      // Scroll up - previous slide
-      $(this).slick("slickPrev");
-    } else {
-      // Scroll down - next slide
-      $(this).slick("slickNext");
-    }
-  });
-  $("#myTab button").on("click", function (e) {
-    e.preventDefault();
-    var tabIndex = $(this).parent().index();
-    $(".product-slider").slick("slickGoTo", tabIndex);
-  });
-});
-
-$(".service-slider").owlCarousel({
-  loop: true,
-  dots: false,
-  margin: 25,
-  nav: false,
-  center: true,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  responsive: {
-    0: {
-      items: 1.5,
-    },
-    475: {
-      items: 2.5,
-    },
-    900: {
-      items: 4,
-    },
-    1600: {
-      items: 5.5,
-    },
-  },
-});
 
 // Animation JS
 $(function () {
@@ -143,57 +57,21 @@ $(".navbar-toggler").on("click", function () {
   }, 1000);
 });
 
-$(document).on("click", "#header-overlay", function () {
-  $(".navbar-collapse").removeClass("show");
-  $("body").removeClass("sidetoggle_active");
-  $(".sidebar_menu").removeClass("active");
-  $("#header-overlay").removeClass("active");
-  return false;
+$('.testimonial-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.testimonial-thumb',
+  prevArrow: $('.arrow-prev'),
+  nextArrow: $('.arrow-next'),
 });
-$(document).ready(function () {
-  $('.accordion-item').on('click', function () {
-    $('.accordion-item').removeClass('active');
-    $(this).toggleClass('active');
-  });
-});
-$(function () {
-class TxtType {
-  constructor(el, toRotate, period) {
-    this.el = el;
-    this.toRotate = JSON.parse(toRotate);
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.isDeleting = false;
-    this.tick();
-  }
-
-  tick() {
-    const fullTxt = this.toRotate[this.loopNum % this.toRotate.length];
-    this.txt = this.isDeleting ? fullTxt.substring(0, this.txt.length - 1) : fullTxt.substring(0, this.txt.length + 1);
-    this.el.html(`<span class="wrap">${this.txt}</span>`);
-
-    let delta = this.isDeleting ? 100 : 200 - Math.random() * 100;
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
-    }
-
-    setTimeout(() => this.tick(), delta);
-  }
-}
-
-$('.typewrite').each(function () {
-  const $el = $(this);
-  new TxtType($el, $el.attr('data-type'), $el.attr('data-period'));
-});
-
-// Inject CSS
-$('head').append('<style>.typewrite > .wrap {padding-right:14px; border-right: 8px solid #000000 }</style>');
-
+$('.testimonial-thumb').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.testimonial-slider',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  centerPadding: 0
 });
