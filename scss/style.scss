@@ -815,11 +815,22 @@ header {
       margin-top: auto;
       position: relative;
       padding: 15px 15px 20px;
-      background: rgba(255, 255, 255, 0.8);
       box-shadow: 15.28px -15.28px 15.28px 0px #FFFFFF1A inset;
-      backdrop-filter: blur(26.65825843811035px);
       border-radius: 0px 0px 10px 10px;
-
+      position: relative;
+      z-index: 2;
+      &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0 0 10px 10px;
+        backdrop-filter: blur(26.65px);background: rgba(255, 255, 255, 0.8);
+        box-shadow: 15.28px -15.28px 15.28px 0px #FFFFFF1A inset;
+      }
       .news-meta {
           span {
               @media screen and (max-width: 575px) {
@@ -1040,6 +1051,7 @@ footer {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
+    position: relative;
     .left-support{
       position: absolute;
       bottom: 0;
@@ -1055,7 +1067,7 @@ footer {
     }
     .lines{
       position: absolute;
-      top: -77px;
+      top: 0;
       right: 9%;
       mix-blend-mode: color-dodge;
       pointer-events: none;
@@ -1096,6 +1108,7 @@ footer {
       height: 62px;
       background: linear-gradient(228.14deg, #EFF2FF 26.37%, #FEF4F3 99.77%);
       border-radius: 10px;
+      animation: bgRotate 2s linear infinite alternate;
     }
     .icon-wrap{
       height: 58px;
@@ -1134,13 +1147,11 @@ footer {
       }
       small{
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 41px;
-        height: 1px;
         display: block;
-        background-color: $gray-100;
-        right: 100%;
+        right: unset;          
+        width: 30px;
+        height: 77px;
+        background: transparent;
       }
     }
     h6{
@@ -1167,10 +1178,42 @@ footer {
         &::before{
           background:linear-gradient(271.57deg, #C2C3CF 7.72%, #FFFFFF 62.24%);
         }
-        small{
-          right: unset;
-          left: 100%;
-        }
+      }
+    }
+    &.one{
+      small{
+        border-top: 1px solid $gray-100;
+        border-right: 1px solid $gray-100;
+        transform: translateY(-50%) skewX(48deg);
+        top: calc(100% + 8px);
+        left: calc(100% + 43px);
+      }
+    }
+    &.two{
+      small{
+        border-top: 1px solid $gray-100;
+        border-left: 1px solid $gray-100;
+        transform: skewX(-48deg) rotate(180deg) translateY(-50%);
+        bottom: calc(100% + 8px);
+        left: calc(100% + 86px);
+      }
+    }
+    &.three{
+      small{
+        border-top: 1px solid #C2C3CF;
+        border-left: 1px solid #C2C3CF;
+        transform: translateY(-50%) skewX(-48deg);
+        top: calc(100% + 8px);
+        right: calc(100% + 43px);
+      }
+    }
+    &.four{
+      small{
+        border-top: 1px solid $gray-100;
+        border-right: 1px solid $gray-100;
+        transform: skewX(48deg) rotate(180deg) translateY(-50%);
+        bottom: calc(100% + 8px);
+        right: calc(100% + 86px);
       }
     }
   }
@@ -1179,22 +1222,14 @@ footer {
     &::before{
       position: absolute;
       content: '';
-      width: 1px;
-      height: 100%;
-      background: $gray-100;
-      transform: rotate(52deg) translateX(-50%);
-      left: 50%;
-      z-index: -3;
-    }
-    &::after{
-      position: absolute;
-      content: '';
-      width: 1px;
-      height: 100%;
-      background: $gray-100;
-      transform: rotate(-52deg) translateX(-50%);
-      left: 50%;
-      z-index: -3;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid $gray-100;
+      background: $white;
+      border-radius: 100%;
+      z-index: 3;
     }
   }
   .global-wrapper{
@@ -1206,6 +1241,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 3;
     &::before{
       position: absolute;
       content: '';
@@ -1217,6 +1253,7 @@ footer {
       box-shadow: 0px 2px 5px 0px #B4B9D51A, 0px 9px 9px 0px #B4B9D517,0px 21px 13px 0px #B4B9D50D;
       border-radius: 100%;
       z-index: -1;
+      animation: rotate 2s linear infinite;
     }
     &::after{
       position: absolute;
@@ -1232,3 +1269,22 @@ footer {
     }
   }
 }
+
+// ANIMATION 
+@keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+} 
+
+@keyframes bgRotate {
+    0%{
+      background-size: 100% 100%;
+    }
+    100%{
+      background-size: 100% 400%;
+    }
+} 
