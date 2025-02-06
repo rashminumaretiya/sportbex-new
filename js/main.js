@@ -75,3 +75,5 @@ $('.testimonial-thumb').slick({
   focusOnSelect: true,
   centerPadding: 0
 });
+
+AOS.init();

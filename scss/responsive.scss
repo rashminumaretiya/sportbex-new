@@ -10,11 +10,11 @@ $gray-100: #C2C3CF;
   .container {
     max-width: 1190px;
   }
-  .lg-heading{
+  .lg-heading {
     font-size: 66px;
   }
-  .heading{
-    h2{
+  .heading {
+    h2 {
       font-size: 46px;
     }
   }
@@ -46,17 +46,33 @@ $gray-100: #C2C3CF;
       }
     }
   } 
+  .sport-betting-api-main {
+    .single-box {
+      &::after {
+        top: 42px;
+        left: 117px;
+        width: calc(100% - 120px);
+        height: calc(100% - 42px);
+      }
+      .round-img-wrapper {
+        height: 85px;
+        width: 85px;
+      }
+      .content {
+        padding-left: 85px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
- 
   .header-wrap {
     .navbar-collapse {
       background-color: rgb(255 255 255 / 87%);
     }
   }
-  .heading{
-    h2{
+  .heading {
+    h2 {
       font-size: 42px;
     }
   }
@@ -72,7 +88,8 @@ $gray-100: #C2C3CF;
     background-color: #0f1220de;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: -6.67px 6.67px 6.67px 0px rgba(255, 255, 255, 0.1019607843) inset,
+    box-shadow: -6.67px 6.67px 6.67px 0px rgba(255, 255, 255, 0.1019607843)
+        inset,
       6.67px -6.67px 6.67px 0px rgba(57, 27, 36, 0.1019607843) inset;
     transition: all 0.5s ease-in-out;
     z-index: 99999;
@@ -101,7 +118,7 @@ $gray-100: #C2C3CF;
       visibility: visible;
     }
   }
-  .lg-heading{
+  .lg-heading {
     font-size: 56px;
   }
   .api-inner-info {
@@ -109,19 +126,90 @@ $gray-100: #C2C3CF;
      display: none;
     }
   }
+  .sport-betting-api-main {
+    .single-box {
+      &::after {
+        top: 32px;
+        left: 102px;
+        width: calc(100% - 100px);
+        height: calc(100% - 32px);
+      }
+      .round-img-wrapper {
+        height: 70px;
+        width: 70px;
+        img {
+          max-width: 40px;
+        }
+      }
+      .content {
+        padding-left: 70px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .testimonial-wrapper {
+    [class*="arrow-"] {
+      top: unset;
+      bottom: 10px;
+      transform: translateY(0);
+      &[class*="-prev"] {
+        right: 50.5%;
+        left: unset;
+      }
+      &[class*="-next"] {
+        left: 50.5%;
+        right: unset;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
-
 }
 
 @media screen and (max-width: 991px) {
-  .lg-heading{
+  .lg-heading {
     font-size: 45px;
   }
-  .heading{
-    h2{
+  .pt-70 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 50px;
+  }
+  .heading {
+    h2 {
       font-size: 38px;
+    }
+  }
+  .banner-section {
+    margin-bottom: 280px;
+    .img-wrapper {
+      margin-bottom: -220px;
+    }
+  }
+  .api-solution-main {
+    .heading {
+      margin-bottom: 50px;
+    }
+    .single-box {
+      .round-img-wrapper {
+        margin-bottom: 20px;
+      }
+    }
+    .arrows {
+      display: none;
+    }
+  }
+  .testimonial-wrapper {
+    padding: 30px 15px 60px;
+    &::after {
+      transform: rotate(4deg);
+    }
+    &::before {
+      transform: rotate(-4deg);
     }
   }
   .why-choose-section{
@@ -207,15 +295,66 @@ $gray-100: #C2C3CF;
 }
 
 @media screen and (max-width: 767px) {
-  body{
+  .odds-feeds-inner{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  body {
     font-size: 14px;
   }
-  .lg-heading{
+  .lg-heading {
     font-size: 40px;
   }
-  .heading{
-    h2{
+  .heading {
+    h2 {
       font-size: 34px;
+    }
+    h6 {
+      font-size: 14px;
+      border-radius: 6px;
+      padding: 6px 18px;
+    }
+  }
+  .banner-section {
+    margin-bottom: 230px;
+    .shape2 {
+      display: none;
+    }
+    .img-wrapper {
+      margin-bottom: -180px;
+    }
+  }
+  .betting-casino-main {
+    .single-box {
+      h5 {
+        font-size: 17px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .btn {
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+  .accordion-header {
+    p {
+      font-size: 16px;
+    }
+  }
+  .faq-section {
+    .accordion {
+      .accordion-item {
+        .accordion-header {
+          .accordion-button {
+            font-size: 16px;
+            line-height: 1.4;
+            gap: 8px;
+            span {
+              align-self: baseline;
+            }
+          }
+        }
+      }
     }
   }
   .free-support-section {
@@ -231,15 +370,48 @@ $gray-100: #C2C3CF;
   }
 }
 
-
 @media screen and (max-width: 575px) {
-  
-  .lg-heading{
+  .pt-70 {
+    padding-top: 40px;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  .lg-heading {
     font-size: 34px;
   }
-  .heading{
-    h2{
+  .heading {
+    h2 {
       font-size: 30px;
+    }
+  }
+  .logo-wrapper {
+    max-width: 185px;
+  }
+  .banner-section {
+    margin-bottom: 170px;
+    .img-wrapper {
+      margin-bottom: -130px;
+    }
+  }
+  .sport-betting-api-main {
+    .single-box {
+      &::after {
+        left: 88px;
+        transform: skewX(14deg);
+      }
+      .content {
+        max-width: 95%;
+      }
+    }
+  }
+
+  .betting-casino-main {
+    .single-box {
+      .img-wrapper {
+        min-height: unset;
+        margin-bottom: 18px;
+      }
     }
   }
 
@@ -250,12 +422,11 @@ $gray-100: #C2C3CF;
   }
 
   footer {
-
     .footer-widget {
-      padding: 20px 0;
+      padding: 0;
 
       h3 {
-        margin-bottom: 18px;
+        margin-bottom: 0;
         padding-bottom: 12px;
       }
 
@@ -271,26 +442,60 @@ $gray-100: #C2C3CF;
         }
       }
     }
-
     .footer-links {
       padding: 0 14px;
 
-      [class*=col-]:nth-of-type(1) {
+      [class*="col-"]:nth-of-type(1) {
         border: none;
       }
     }
   }
-
-  
+  .api-solution-main {
+    .heading {
+      margin-bottom: 40px;
+    }
+    .single-box {
+      .round-img-wrapper {
+        img {
+          max-width: 40px;
+        }
+      }
+      h5 {
+        margin-bottom: 10px;
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 475px) {
-  .lg-heading{
+  .odds-feeds-inner{
+    max-width: 90%;
+  }
+  .odds-feeds-inner::before{
+    right: -11px;
+  }
+  .odds-feeds-inner .odds-feeds-img:after{
+    right: -10px;
+  }
+  [class*=col-]:last-child .odds-feeds-inner::before{
+    left: -11px;
+  }
+  [class*=col-]:last-child .odds-feeds-img:after{
+    left: -10px;
+  }
+  .lg-heading {
     font-size: 30px;
   }
-  .heading{
-    h2{
+  .heading {
+    h2 {
       font-size: 28px;
+    }
+  }
+  .banner-section {
+    margin-bottom: 150px;
+    .img-wrapper {
+      margin-bottom: -110px;
     }
   }
   footer {
@@ -310,8 +515,4 @@ $gray-100: #C2C3CF;
       margin-bottom: 20px;
     }
   }
-}
-
-@media screen and (max-width: 360px) {
-  
 }
