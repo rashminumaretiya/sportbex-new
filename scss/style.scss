@@ -99,6 +99,24 @@ li {
   list-style: none;
 }
 
+.lg-heading {
+  font-size: 72px;
+  line-height: 1.2;
+  color: $white;
+  font-family: $sf-medium;
+  span {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      90deg,
+      $primary-50 31.97%,
+      $primary-300 51.26%,
+      $primary-400 76.83%
+    );
+    -webkit-background-clip: text;
+    font-family: $sf-bold;
+  }
+}
+
 .btn-outline-primary {
   &:hover {
     color: $white;
@@ -287,22 +305,7 @@ header {
     left: 0;
     mix-blend-mode: color-dodge;
   }
-  .lg-heading {
-    font-size: 72px;
-    line-height: 1.2;
-    color: $white;
-    font-family: $sf-medium;
-    span {
-      -webkit-text-fill-color: transparent;
-      background: linear-gradient(
-        90deg,
-        $primary-50 31.97%,
-        $primary-300 51.26%,
-        $primary-400 76.83%
-      );
-      -webkit-background-clip: text;
-      font-family: $sf-bold;
-    }
+  .lg-heading{
     & ~ p {
       color: $white;
       opacity: 0.7;
@@ -334,8 +337,8 @@ header {
     text-align: center;
     img {
       width: 100%;
-      max-width: 67%;
-      margin: 0 0 8px 24px;
+      max-width: 69%;
+      margin: 0 0 8px 0px;
     }
   }
   .single-box {
@@ -434,7 +437,7 @@ header {
     .content {
       padding-left: 105px;
       h6 {
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.45;
         margin-bottom: 4px;
         font-size: 18px;
@@ -1042,6 +1045,7 @@ footer {
       bottom: 0;
       left: 0;
       pointer-events: none;
+      height: 100%;
     }
     .right-support{
       position: absolute;
@@ -1053,7 +1057,7 @@ footer {
       position: absolute;
       top: -77px;
       right: 9%;
-      mix-blend-mode: color;
+      mix-blend-mode: color-dodge;
       pointer-events: none;
     }
     p{
@@ -1132,7 +1136,7 @@ footer {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 40px;
+        width: 41px;
         height: 1px;
         display: block;
         background-color: $gray-100;

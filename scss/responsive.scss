@@ -8,6 +8,14 @@
   .container {
     max-width: 1190px;
   }
+  .lg-heading{
+    font-size: 66px;
+  }
+  .heading{
+    h2{
+      font-size: 46px;
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -15,6 +23,11 @@
   .header-wrap {
     .navbar-collapse {
       background-color: rgb(255 255 255 / 87%);
+    }
+  }
+  .heading{
+    h2{
+      font-size: 42px;
     }
   }
 
@@ -58,6 +71,9 @@
       visibility: visible;
     }
   }
+  .lg-heading{
+    font-size: 56px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -65,16 +81,42 @@
 }
 
 @media screen and (max-width: 991px) {
- 
+  .lg-heading{
+    font-size: 45px;
+  }
+  .heading{
+    h2{
+      font-size: 38px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-  
+  body{
+    font-size: 14px;
+  }
+  .lg-heading{
+    font-size: 40px;
+  }
+  .heading{
+    h2{
+      font-size: 34px;
+    }
+  }
 }
 
 
 @media screen and (max-width: 575px) {
   
+  .lg-heading{
+    font-size: 34px;
+  }
+  .heading{
+    h2{
+      font-size: 30px;
+    }
+  }
+
   footer {
 
     .footer-widget {
@@ -111,7 +153,14 @@
 }
 
 @media screen and (max-width: 475px) {
-  
+  .lg-heading{
+    font-size: 30px;
+  }
+  .heading{
+    h2{
+      font-size: 28px;
+    }
+  }
   footer {
     .footer-heading {
       .footer-arrow {
