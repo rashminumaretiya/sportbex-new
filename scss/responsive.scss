@@ -1,4 +1,4 @@
-$gray-100: #C2C3CF;
+$gray-100: #c2c3cf;
 
 @media screen and (min-width: 1400px) {
   .container {
@@ -19,33 +19,33 @@ $gray-100: #C2C3CF;
     }
   }
   .why-choose-section {
-    .why-card{
-      &.one{
-        small{
-            transform: translateY(-50%) skewX(47deg);
-            left: calc(100% + 41px);
+    .why-card {
+      &.one {
+        small {
+          transform: translateY(-50%) skewX(47deg);
+          left: calc(100% + 41px);
         }
       }
-      &.two{
-        small{
-            transform: skewX(-47deg) rotate(180deg) translateY(-50%);
-            left: calc(100% + 83px);
+      &.two {
+        small {
+          transform: skewX(-47deg) rotate(180deg) translateY(-50%);
+          left: calc(100% + 83px);
         }
       }
-      &.three{
-        small{
-            transform: translateY(-50%) skewX(-47deg);
-            right: calc(100% + 41px);
+      &.three {
+        small {
+          transform: translateY(-50%) skewX(-47deg);
+          right: calc(100% + 41px);
         }
       }
-      &.four{
-        small{
-            transform:skewX(47deg) rotate(180deg) translateY(-50%);
-            right: calc(100% + 83px);
+      &.four {
+        small {
+          transform: skewX(47deg) rotate(180deg) translateY(-50%);
+          right: calc(100% + 83px);
         }
       }
     }
-  } 
+  }
   .sport-betting-api-main {
     .single-box {
       &::after {
@@ -91,7 +91,7 @@ $gray-100: #C2C3CF;
     box-shadow: -6.67px 6.67px 6.67px 0px rgba(255, 255, 255, 0.1019607843)
         inset,
       6.67px -6.67px 6.67px 0px rgba(57, 27, 36, 0.1019607843) inset;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     z-index: 99999;
     flex-direction: column;
     justify-content: flex-start;
@@ -108,7 +108,7 @@ $gray-100: #C2C3CF;
     background: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     top: 0;
-    animation-duration: 0.3s;
+    transition: all 0.3s ease-in-out;
     cursor: url("../assets/png/close.png"), pointer;
     opacity: 0;
     visibility: hidden;
@@ -122,8 +122,8 @@ $gray-100: #C2C3CF;
     font-size: 56px;
   }
   .api-inner-info {
-    .api-img{
-     display: none;
+    .api-img {
+      display: none;
     }
   }
   .sport-betting-api-main {
@@ -212,13 +212,13 @@ $gray-100: #C2C3CF;
       transform: rotate(-4deg);
     }
   }
-  .why-choose-section{
-    .why-card{
+  .why-choose-section {
+    .why-card {
       text-align: center;
       padding: 28px 16px 16px;
-      &::after{
+      &::after {
         position: absolute;
-        content: '';
+        content: "";
         left: 50%;
         top: calc(100% + 12px);
         width: 1px;
@@ -226,56 +226,56 @@ $gray-100: #C2C3CF;
         background: $gray-100;
         height: 86px;
       }
-      &::before{
+      &::before {
         width: calc(100% - 48px);
         left: 24px;
         right: 24px;
       }
-      &:last-child{
-        &::after{
+      &:last-child {
+        &::after {
           display: none;
         }
       }
-      .icon-wrap{
-          right: unset;
-          top: -4px;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          &::before{
-            background: linear-gradient(180deg, #C2C3CF 7.72%, #FFFFFF 62.24%);
-          }
-        small{
+      .icon-wrap {
+        right: unset;
+        top: -4px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &::before {
+          background: linear-gradient(180deg, #c2c3cf 7.72%, #ffffff 62.24%);
+        }
+        small {
           display: none;
         }
       }
-      &.left{
+      &.left {
         text-align: center;
         padding: 28px 16px 16px;
-        &::before{
+        &::before {
           width: calc(100% - 48px);
           left: 24px;
           right: 24px;
         }
-        .icon-wrap{
+        .icon-wrap {
           right: unset;
           top: -4px;
           left: 50%;
           transform: translate(-50%, -50%);
-          &::before{
-            background: linear-gradient(180deg, #C2C3CF 7.72%, #FFFFFF 62.24%);
+          &::before {
+            background: linear-gradient(180deg, #c2c3cf 7.72%, #ffffff 62.24%);
           }
         }
       }
-      &.one{
+      &.one {
         margin-top: 60px;
       }
     }
-    .inner-logo{
+    .inner-logo {
       margin-bottom: 70px;
       margin-top: 50px;
-      &::after{
+      &::after {
         position: absolute;
-        content: '';
+        content: "";
         left: 50%;
         top: -38px;
         bottom: -70px;
@@ -284,18 +284,29 @@ $gray-100: #C2C3CF;
         background: $gray-100;
       }
     }
-    .global-wrapper{
+    .global-wrapper {
       height: 88px;
       width: 88px;
     }
-    .wrap{
+    .wrap {
       max-width: 575px;
+    }
+  }
+  .sport-betting-api-main {
+    .single-box {
+      &::after {
+        left: 88px;
+        transform: skewX(14deg);
+      }
+      .content {
+        max-width: 95%;
+      }
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .odds-feeds-inner{
+  .odds-feeds-inner {
     max-width: 70%;
     margin: 0 auto;
   }
@@ -360,12 +371,13 @@ $gray-100: #C2C3CF;
   .free-support-section {
     .support-card {
       padding: 40px 20px;
-      .right-support, .left-support{
+      .right-support,
+      .left-support {
         mix-blend-mode: soft-light;
       }
     }
   }
-  .api-inner-info{
+  .api-inner-info {
     padding: 40px 12px;
   }
 }
@@ -394,17 +406,6 @@ $gray-100: #C2C3CF;
       margin-bottom: -130px;
     }
   }
-  .sport-betting-api-main {
-    .single-box {
-      &::after {
-        left: 88px;
-        transform: skewX(14deg);
-      }
-      .content {
-        max-width: 95%;
-      }
-    }
-  }
 
   .betting-casino-main {
     .single-box {
@@ -415,8 +416,8 @@ $gray-100: #C2C3CF;
     }
   }
 
-  .api-shape{
-    img{
+  .api-shape {
+    img {
       width: 32vw;
     }
   }
@@ -469,19 +470,19 @@ $gray-100: #C2C3CF;
 }
 
 @media screen and (max-width: 475px) {
-  .odds-feeds-inner{
+  .odds-feeds-inner {
     max-width: 90%;
   }
-  .odds-feeds-inner::before{
+  .odds-feeds-inner::before {
     right: -11px;
   }
-  .odds-feeds-inner .odds-feeds-img:after{
+  .odds-feeds-inner .odds-feeds-img:after {
     right: -10px;
   }
-  [class*=col-]:last-child .odds-feeds-inner::before{
+  [class*="col-"]:last-child .odds-feeds-inner::before {
     left: -11px;
   }
-  [class*=col-]:last-child .odds-feeds-img:after{
+  [class*="col-"]:last-child .odds-feeds-img:after {
     left: -10px;
   }
   .lg-heading {

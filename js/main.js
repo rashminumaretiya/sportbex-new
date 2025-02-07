@@ -52,10 +52,13 @@ $(function () {
 
 $(".navbar-toggler").on("click", function () {
   $("body").addClass("sidetoggle_active");
-  setTimeout(() => {
-    $("#header-overlay").addClass("active");
-  }, 1000);
+  $("#header-overlay").addClass("active");
 });
+$("#header-overlay").on("click", function () { 
+  $("#header-overlay").removeClass("active");
+  $(".navbar-collapse").removeClass("show");
+  $("body").removeClass("sidetoggle_active");
+})
 
 $('.testimonial-slider').slick({
   slidesToShow: 1,

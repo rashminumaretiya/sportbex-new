@@ -203,14 +203,12 @@ header {
     &.dark-header {
       background-color: #11182cde;
     }
-    .nav-item {
-      .nav-link {
-        color: $white;
-        padding: 8px 16px;
-        font-size: 14px;
-        font-family: $sf-medium;
-      }
-    }
+  }
+  .nav-link {
+    color: $white ;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: $sf-medium;
   }
   .dropdown-toggle {
     font-size: 14px;
@@ -274,6 +272,7 @@ header {
       top: 50%;
       transform: translateY(-50%);
       right: 15px;
+      pointer-events: none;
     }
   }
 }
