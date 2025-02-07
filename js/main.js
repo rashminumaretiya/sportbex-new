@@ -78,5 +78,31 @@ $('.testimonial-thumb').slick({
   focusOnSelect: true,
   centerPadding: 0
 });
-
 AOS.init();
+
+// // County select JS
+
+const countrySelect = document.getElementById("countrySelect");
+  const phoneCodeInput = document.getElementById("phoneCode");
+
+  // Fetch country data from intl-tel-input library
+  const countries = window.intlTelInputGlobals.getCountryData();
+
+  // Populate <select> with country options
+  function populateCountryOptions() {
+    countries.forEach((country) => {
+      const option = document.createElement("option");
+      option.textContent = `+${country.dialCode}`;
+      // option.textContent = `${country.name}`;
+      countrySelect.appendChild(option);
+    });
+    
+    // Set initial selected value
+    countrySelect.value = "+91"; 
+  }
+
+  // Call function to populate dropdown
+populateCountryOptions();
+
+
+
