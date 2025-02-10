@@ -1,3 +1,4 @@
+AOS.init();
 // document.addEventListener("DOMContentLoaded", function() {
 //   AOS.init();
 // });
@@ -104,5 +105,20 @@ const countrySelect = document.getElementById("countrySelect");
   // Call function to populate dropdown
 populateCountryOptions();
 
+// Tabs
+document.querySelectorAll('.btn-group .btn').forEach(button => {
+  button.addEventListener('click', function () {
+      // Remove active class from all buttons
+      document.querySelectorAll('.btn-group .btn').forEach(btn => btn.classList.remove('active'));
 
+      // Add active class to clicked button
+      this.classList.add('active');
 
+      // Hide all tab content
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+      // Show the selected tab content
+      const tabId = this.getAttribute('data-tab');
+      document.getElementById(tabId).classList.add('active');
+  });
+});
